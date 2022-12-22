@@ -3,28 +3,25 @@
 """
 Created on Thu Apr 22 2021
 
-@author: cyannbuisson in collaboration with Valentin Poncet
+@author: Cyann Plard in collaboration with Valentin Poncet
 """
 import numpy as np
 import matplotlib.pyplot as plt
 
 """ INTRODUCTION """
 
-#Hi. This is a project about prey-predator system solved with the Runge-Kutta 4 method.
-#You may use this code to solve another differential equations system. 
-#All you have to do is :
-    #changing the time parameters at the begininng of the RK4 function in the "Solver" part.
-    #replacing the F function by the one you want to solve has explained in the "Function" part.
-    #inserting the right initial conditions in the y0 table as explained in the "Plot" part.
+#Here is prey-predator system solved with the Runge-Kutta 4 method. This code may be use to solve another differential equations system. 
+#All you have to do is to :
+    #change the time parameters at the begininng of the RK4 function in the "Solver" part.
+    #replace the F function by the one you want to solve has explained in the "Function" part.
+    #insert the right initial conditions in the y0 table as explained in the "Plot" part.
     #change the plot display eventually
     
-# The tyoe of problem we solve here are n differential equations of m order like :
+# The type of problem we solve here are n differential equations of m order like :
         # dy/dx=g(y,x) with g a function determining this differential equation of 1st order
         # obviously there are then n variables to calculate (in the example above n=1)
 
 """ RUNGE-KUTTA 4 SOLVER """
-
-
 
 #F is the function resuming the n differential equation(s) (defined in the "function" part)
 #y0 is a list containing the m*n initial conditions of the problem (explained in the "plot" part).
